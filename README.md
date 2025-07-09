@@ -1,88 +1,63 @@
 # MoneyTracker
 
-A personal finance tracker built with Electron, React, and Vite.
+A modern personal finance tracker built with Electron, React, and TypeScript. Track your credit scores, credit cards, bank accounts, and debts all in one place.
 
 ## Features
 
-- Cross-platform desktop application
-- Modern React UI with TypeScript
-- Fast development with Vite
-- Electron integration for native desktop features
+- 📈 **Credit Score Tracking** - Monitor scores from Canadian providers (Credit Karma, Borrowell, Equifax)
+- 💳 **Credit Card Management** - Track limits, APR, fees, and rewards
+- 🏦 **Bank Account Tracking** - Manage checking, savings, TFSA, and RRSP accounts
+- 💰 **Debt Management** - Monitor CRA debts, loans, and payment schedules
+- 📊 **Analytics & Charts** - Visual insights into your financial health
+- 🌙 **Dark Theme** - Professional dark interface with green accents
+- 🔄 **Auto-Updates** - Automatic updates via GitHub releases
 
-## Getting Started
+## Privacy & Security
+
+- ✅ **100% Local Data** - All your financial data stays on your device
+- ✅ **No Cloud Sync** - No data is sent to external servers
+- ✅ **Open Source** - Full transparency of code
+- ✅ **No Telemetry** - Zero tracking or analytics
+
+## Development
 
 ### Prerequisites
+- Node.js 18+
+- npm
 
-- Node.js 18 or higher
-- npm or yarn
-
-### Installation
-
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-### Development
-
-To run the app in development mode:
-
+### Setup
 ```bash
+# Install dependencies
+npm install
+
+# Start development server
 npm run electron:dev
+
+# Build for production
+npm run dist
 ```
 
-This will start the Vite development server and launch the Electron app.
+### Publishing Updates
 
-### Building
+1. Update version in `package.json`
+2. Create a git tag: `git tag v1.0.1`
+3. Push tag: `git push origin v1.0.1`
+4. GitHub Actions will automatically build and create a release
 
-To build the app for production:
+## Download
 
-```bash
-npm run electron:build
-```
+Download the latest version from the [Releases](https://github.com/WynterJones/MT/releases) page.
 
-This will create a production build in the `release` folder.
+## Tech Stack
 
-### Scripts
-
-- `npm run dev` - Start Vite development server
-- `npm run electron` - Start Electron (requires dev server to be running)
-- `npm run electron:dev` - Start both dev server and Electron concurrently
-- `npm run electron:build` - Build for production
-- `npm run build` - Build web version only
-
-## Project Structure
-
-```
-MoneyTracker/
-├── electron/           # Electron main process files
-│   ├── main.ts        # Main Electron process
-│   ├── preload.ts     # Preload script
-│   └── util.ts        # Utility functions
-├── src/               # React application source
-│   ├── App.tsx        # Main App component
-│   ├── App.css        # App styles
-│   ├── index.css      # Global styles
-│   └── main.tsx       # React entry point
-├── dist/              # Built web application
-├── dist-electron/     # Built Electron files
-├── release/           # Production builds
-├── index.html         # HTML template
-├── package.json       # Dependencies and scripts
-├── tsconfig.json      # TypeScript config for React
-├── tsconfig.node.json # TypeScript config for Node.js
-└── vite.config.ts     # Vite configuration
-```
-
-## Technologies Used
-
-- **Electron** - Desktop application framework
-- **React** - UI library
+- **Electron** - Desktop app framework
+- **React** - UI framework
 - **TypeScript** - Type safety
-- **Vite** - Build tool and development server
-- **CSS3** - Styling with modern features
+- **Tailwind CSS** - Styling
+- **Recharts** - Data visualization
+- **React Icons** - Professional icons
+- **Vite** - Build tool
 
 ## License
 
-MIT
+MIT License - feel free to use and modify for personal use.

@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "@types/react-router-dom": "^5.3.3",
-    "electron-updater": "^6.1.7",
+    "electron-updater": "^6.6.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.5.0",
@@ -62,15 +62,18 @@
     ],
     "publish": {
       "provider": "github",
-      "owner": "YOUR_GITHUB_USERNAME",
-      "repo": "MoneyTracker"
+      "owner": "WynterJones",
+      "repo": "MT"
     },
     "mac": {
       "category": "public.app-category.finance",
       "target": [
         {
           "target": "default",
-          "arch": ["x64", "arm64"]
+          "arch": [
+            "x64",
+            "arm64"
+          ]
         }
       ]
     },
